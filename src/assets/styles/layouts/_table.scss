@@ -1,0 +1,51 @@
+@use "../variables";
+@use "../mixins";
+
+@layer layout {
+  .container {
+    container-type: inline-size;
+  }
+
+  .program {
+    @container (min-width: 600px) {
+      padding: 2rem;
+    }
+
+    @container (min-width: 900px) {
+      padding: 2rem 4rem;
+    }
+
+    .accordion-button {
+      font-size: 1rem;
+
+      @container (min-width: 600px) {
+        font-size: 1.1rem;
+      }
+
+      @container (min-width: 900px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    .accordion-body {
+      font-size: .9rem;
+
+      @container (min-width: 600px) {
+        font-size: 1rem;
+      }
+
+      @container (min-width: 900px) {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+table {
+  width: 100%;
+}
+
+.table-dark {
+  --bs-table-bg: color(display-p3 .1059 .5961 .8784);
+  --bs-table-border-color: color(display-p3 .1059 .5961 .8784);
+}

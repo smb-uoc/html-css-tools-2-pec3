@@ -1,0 +1,21 @@
+@use "../variables";
+@use "../mixins";
+
+.btn {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.btn-register {
+  border: none;
+  background-color: variables.$second-color;
+  color: variables.$primary-color;
+  text-decoration: none;
+}
+
+.btn-learn-more {
+  border: 1px solid variables.$second-color;
+  background-color: transparent;
+  color: variables.$second-color;
+  text-decoration: none;
+}

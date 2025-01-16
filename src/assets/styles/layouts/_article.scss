@@ -1,0 +1,111 @@
+@use "../variables";
+@use "../mixins";
+
+.blockquote {
+  padding-left: 1.5rem;
+  @include mixins.border-left(variables.$primary-color);
+  color: variables.$third-color;
+  font-style: italic;
+
+  footer {
+    margin-top: 1rem;
+    color: variables.$primary-color;
+    font-size: .9em;
+  }
+}
+
+.article-image {
+  @include mixins.display-flex(flex, column, space-evenly);
+  align-items: center;
+  height: 60vh;
+  background: url("../images/contest.png") center / cover no-repeat;
+  color: variables.$second-color;
+
+  @container (max-width: 768px) {
+    height: 50vh;
+  }
+}
+
+.article-title {
+  @include mixins.font(1.25rem, variables.$bold-weight, variables.$primary-color);
+
+  p {
+    color: variables.$fourth-color;
+    font-weight: variables.$bold-weight;
+  }
+}
+
+article:has(.row) .row:first-of-type {
+  padding-bottom: 3rem;
+}
+
+:where(.row) {
+  padding-top: 2rem;
+}
+
+article:has(.row-with-separator) .row-with-separator {
+  border-bottom: 1px solid variables.$primary-color;
+}
+
+.custom-list {
+  counter-reset: item; /* Inicializa el contador de la lista */
+
+  .list-group-item {
+    position: relative;
+    padding-left: 3rem;
+    border: none;
+    box-shadow: none;
+
+    &::before {
+      content: counter(item);
+      position: absolute;
+      top: 15%;
+      left: 0;
+      width: 2rem;
+      height: 2rem;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      background-color: $primary-color;
+      color: $second-color;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      text-align: center;
+      counter-increment: item;
+    }
+  }
+}
+
+.list-group-item > :is(strong + p) {
+  padding-top: 1rem;
+}
+
+.list-group-item > :is(strong) {
+  color: variables.$primary-color;
+}
+
+.carousel-item img {
+  height: 70vh;
+  object-fit: cover;
+
+  @container (max-width: 768px) {
+    height: 50vh; // Redimensionar imagen en pantallas pequeñas
+  }
+}
+
+@container (max-width: 576px) {
+  .blockquote {
+    font-size: .9rem;
+  }
+
+  .article-title {
+    font-size: 1.1rem;
+  }
+
+  .article-image {
+    height: 40vh;
+  }
+
+  .carousel-item img {
+    height: 50vh;
+  }
+}

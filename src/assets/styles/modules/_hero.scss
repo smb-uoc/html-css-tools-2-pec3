@@ -1,0 +1,62 @@
+@use "../variables";
+@use "../mixins";
+
+@layer module {
+  .hero-section {
+    height: 100vh;
+    padding: 4rem 2rem;
+    background: url("../images/cyber-bg.webp") center/cover no-repeat;
+    container-type: inline-size;
+
+    /* Compatibilidad con navegadores sin soporte para Grid */
+    @supports not (display: grid) {
+      @include mixins.display-flex(flex, column, center);
+      align-items: center;
+    }
+
+    /* Hero Section - Si soporta CSS Grid */
+    @supports (display: grid) {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      place-items: center;
+    }
+
+    .hero-content {
+      max-width: 80%;
+      margin: 0 auto;
+      text-align: center;
+
+      /* Compatibilidad con navegadores sin soporte para Grid */
+      @supports not (display: grid) {
+        max-width: 80%;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      @container (min-width: 600px) {
+        padding: 6rem 4rem;
+      }
+
+      @container (min-width: 900px) {
+        padding: 8rem 5rem;
+      }
+
+
+    }
+
+    .btn-container {
+      @include mixins.display-flex(flex, row, center);
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      @container (min-width: 600px) {
+        gap: 1.5rem;
+      }
+
+      @container (min-width: 900px) {
+        gap: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@use "../variables";
+
+@layer theme {
+  :root {
+    --primary-color: variables.$primary-color;
+    --secondary-color: variables.$second-color;
+  }
+}

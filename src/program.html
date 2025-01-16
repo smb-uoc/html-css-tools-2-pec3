@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<include src="./views/head.html"></include>
+<body class="theme-light">
+<include src="./views/header.html"></include>
+
+<main class="container my-5">
+    <section class="mb-5" id="program" class="program">
+        <h1 class="mb-4 text-center">Programa de la Conferencia</h1>
+        <p class="text-center">Descubre todas las actividades y eventos que hemos planeado para los días de la
+            conferencia.</p>
+
+        <table class="table table-striped">
+            <thead class="table-dark">
+            <tr>
+                <th scope="col" style="width: 20%;">Horario</th>
+                <th scope="col">Actividad</th>
+            </tr>
+            </thead>
+            <tbody class="accordion" id="accordionTable">
+            <tr class="accordion-item">
+                <td class="accordion-header">Día 06 - 10:00 - 11:30</td>
+                <td>
+                    <button class="accordion-button collapsed bg-info" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#detail-1"
+                            aria-expanded="false" aria-controls="detail-1">
+                        Inauguración y bienvenida
+                    </button>
+                    <div id="detail-1" class="accordion-collapse collapse bg-body py-3"
+                         data-bs-parent="#accordionTable">
+                        <div class="accordion-body">
+                            <p><strong>Apertura del evento con ponentes destacados</strong></p>
+                            <p>
+                                La jornada comienza con una <strong>ceremonia de apertura</strong> a cargo de
+                                <em>reconocidos expertos en ciberseguridad y tecnología</em>, quienes compartirán su
+                                visión sobre los desafíos
+                                actuales en la protección de sistemas digitales. Durante esta sesión, se presentará el
+                                <strong>itinerario completo del evento</strong>,
+                                destacando las actividades clave y los objetivos principales.
+                            </p>
+                            <p>
+                                Además, los asistentes tendrán la oportunidad de conocer a los organizadores y
+                                patrocinadores, quienes explicarán
+                                la importancia de fomentar el talento y la innovación en el ámbito de la programación y
+                                la seguridad informática.
+                                Este momento también es una excelente ocasión para <strong>establecer contactos</strong>
+                                y conectar con otros entusiastas del sector.
+                            </p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="accordion-item">
+                <td class="accordion-header">Día 07 - 12:00 - 13:30</td>
+                <td>
+                    <button class="accordion-button collapsed bg-info" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#detail-2" aria-expanded="false" aria-controls="detail-2">
+                        Taller: Seguridad en la nube
+                    </button>
+                    <div id="detail-2" class="accordion-collapse collapse bg-body py-3"
+                         data-bs-parent="#accordionTable">
+                        <div class="accordion-body">
+                            <p><strong>Taller: Seguridad en la nube</strong></p>
+                            <p>
+                                En este taller práctico, aprenderás las <strong>mejores prácticas</strong> para proteger
+                                datos y servicios en entornos cloud.
+                                Expertos en el campo compartirán estrategias esenciales para garantizar la seguridad de
+                                aplicaciones y plataformas en
+                                la nube, abordando temas como:
+                            </p>
+                            <ul>
+                                <li>Configuración segura de servicios cloud.</li>
+                                <li>Prevención de accesos no autorizados.</li>
+                                <li>Implementación de medidas de encriptación y backups.</li>
+                                <li>Herramientas avanzadas para el monitoreo y detección de amenazas.</li>
+                            </ul>
+                            <p>
+                                Este taller está diseñado tanto para principiantes que desean entender los fundamentos
+                                de la seguridad en la nube
+                                como para profesionales que buscan perfeccionar sus habilidades y estar al día con las
+                                tendencias más recientes.
+                            </p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr class="accordion-item">
+                <td class="accordion-header">Día 08 - 15:00 - 17:00</td>
+                <td>
+                    <button class="accordion-button collapsed bg-info" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#detail-3" aria-expanded="false" aria-controls="detail-3">
+                        Competición de Ciberseguridad
+                    </button>
+                    <div id="detail-3" class="accordion-collapse collapse bg-body py-3"
+                         data-bs-parent="#accordionTable">
+                        <div class="accordion-body">
+                            <p><strong>Competición de Ciberseguridad</strong></p>
+                            <p>
+                                En esta actividad dinámica, podrás <strong>poner a prueba tus habilidades</strong> en la
+                                resolución de retos de
+                                <em>ciberseguridad</em> trabajando en equipos. Los participantes tendrán que enfrentar
+                                una serie de desafíos
+                                reales relacionados con la protección de sistemas, la identificación de vulnerabilidades
+                                y la defensa contra
+                                ataques informáticos.
+                            </p>
+                            <ul>
+                                <li><strong>Reto 1:</strong> Análisis y mitigación de una amenaza en un entorno
+                                    simulado.
+                                </li>
+                                <li><strong>Reto 2:</strong> Evaluación de la seguridad de una infraestructura digital.
+                                </li>
+                                <li><strong>Reto 3:</strong> Respuesta ante un ataque cibernético de tipo ransomware.
+                                </li>
+                            </ul>
+                            <p>
+                                Este evento está diseñado para aquellos que buscan mejorar sus habilidades prácticas,
+                                enfrentándose a problemas
+                                del mundo real en un ambiente de colaboración. Los equipos serán evaluados por su
+                                capacidad de <em>trabajar bajo presión</em>,
+                                su creatividad en la resolución de problemas y su conocimiento de herramientas de
+                                ciberseguridad.
+                            </p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="inscription" class="inscription">
+        <h2 class="mb-4 text-center">Inscripción</h2>
+        <p class="text-center">Completa el siguiente formulario para registrarte en la conferencia. El precio incluye
+            acceso completo a todas las actividades, materiales y certificado de asistencia.</p>
+
+        <form class="row g-3" data-netlify="true" method="POST" id="registrationForm" name="registrationForm" novalidate>
+            <div class="col-md-6">
+                <label class="form-label" for="name">Nombre completo</label>
+                <input class="form-control" id="name" name="name" required type="text">
+            </div>
+            <div class="col-md-6">
+                <label class="form-label" for="email">Correo electrónico</label>
+                <input class="form-control" id="email" name="email" required type="email">
+            </div>
+            <div class="col-md-12">
+                <label class="form-label" for="message">Comentarios o solicitudes especiales</label>
+                <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+            </div>
+            <div class="col-12 text-center">
+                <button class="btn btn-primary text-light" type="submit" id="submitButton">
+                    Enviar inscripción
+                </button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<div aria-hidden="true" aria-labelledby="confirmModalLabel" class="modal fade confirm-modal" id="confirmModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmModalLabel">Inscripción enviada</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                Gracias por registrarte. En breve recibirás un correo con las instrucciones para el pago y la
+                confirmación de tu inscripción.
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<include src="./views/footer.html"></include>
+<script src="./assets/scripts/main.js" type="module"></script><!-- do not remove this line! -->
+</body>
+</html>

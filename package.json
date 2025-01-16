@@ -1,0 +1,64 @@
+{
+  "name": "pec3",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PEC 3 - HTML-CSS Tools 2",
+  "scripts": {
+    "parcel:serve": "parcel -p 8123 --target web --open",
+    "parcel:build": "parcel build --target web --no-source-maps --no-cache",
+    "clean": "rimraf dist .cache .cache-loader .parcel-cache",
+    "dev": "npm-run-all clean parcel:serve",
+    "build": "npm-run-all clean stylelint parcel:build",
+    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'",
+    "stylelint": "stylelint src/**/*.scss",
+    "validate": "npm-run-all build validate-css validate-html",
+    "validate-css": "css-validator",
+    "validate-html": "html-validator ./dist"
+  },
+  "targets": {
+    "web": {
+      "context": "browser",
+      "publicUrl": "./",
+      "source": "src/index.html",
+      "engines": {
+        "browsers": "last 2 versions, > 0.5%, not dead"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smb-uoc/html-css-tools-2-pec3.git"
+  },
+  "author": {
+    "name": "Silvia Martínez Báez",
+    "email": "smartinezbae@uoc.edu"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues"
+  },
+  "homepage": "https://smb-uoc-cybersecurity-conference.netlify.app/",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "autoprefixer": "^10.4.15",
+    "css-validator": "^0.11.0",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.12.0",
+    "postcss-preset-env": "^9.1.1",
+    "posthtml-include": "^1.7.4",
+    "rimraf": "^5.0.1",
+    "sharp": "^0.33.5",
+    "stylelint": "^16.10.0",
+    "stylelint-config-property-sort-order-smacss": "^10.0.0",
+    "stylelint-config-recommended-scss": "^14.1.0",
+    "stylelint-config-twbs-bootstrap": "^15.1.0",
+    "stylelint-scss": "^6.8.1",
+    "w3c-html-validator": "^1.8.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "vanilla-tilt": "^1.8.1"
+  }
+}

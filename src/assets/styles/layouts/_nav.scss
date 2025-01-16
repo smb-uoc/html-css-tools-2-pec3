@@ -1,0 +1,25 @@
+@use "../variables";
+@use "../mixins";
+
+.nav-container {
+  width: 100%;
+}
+
+.nav-link {
+  --bs-nav-link-hover-color: color(display-p3 .7569 1 .5294);
+  color: variables.$second-color;
+
+  &.active {
+    --bs-navbar-active-color: color(display-p3 .7569 1 .5294);
+  }
+}
+
+div:has(.nav-container) {
+  ul {
+    @include mixins.display-flex(flex, row, space-around);
+  }
+}
+
+.header-nav {
+  @include mixins.font(1.25rem, variables.$bold-weight);
+}

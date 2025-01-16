@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "stylelint-config-recommended-scss",
+    "stylelint-config-twbs-bootstrap",
+    "stylelint-config-property-sort-order-smacss"
+  ],
+  "rules": {
+    "scss/at-function-named-arguments": null,
+    "declaration-block-no-redundant-longhand-properties": true,
+    "shorthand-property-no-redundant-values": true,
+    "color-function-notation": "modern",
+    "unit-no-unknown": [true, {
+      "ignoreUnits": ["sv"]
+    }]
+  }
+}

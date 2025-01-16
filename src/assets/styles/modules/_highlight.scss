@@ -1,0 +1,28 @@
+@use "../variables";
+
+@layer module {
+  .highlight {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    transition: transform .3s ease;
+    border-radius: 1rem;
+    background-color: variables.$second-color;
+  }
+
+  .highlight-link {
+    color: var(--bs-body-color);
+    text-decoration: none;
+  }
+
+  .activities-list li {
+    color: variables.$primary-color;
+    font-size: 1.25rem;
+  }
+}
+
+.venue-image {
+  width: 100%;
+  max-width: variables.$image-max-width;
+  max-height: variables.$image-max-height;
+}

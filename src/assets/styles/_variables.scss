@@ -1,0 +1,24 @@
+@use "sass:color";
+
+$min-width: 340px;
+$image-max-height: 600px;
+$image-max-width: 800px;
+
+$bold-weight: 700;
+
+$primary-color: color(display-p3 0 .478 1); /* #007bff - azul links */
+$second-color: color(display-p3 .974 .98 .98); /* #f8f9fa - blanco grisáceo de los cards */
+$third-color: color(display-p3 .424 .463 .494); /* #6c757d - gris letra texto */
+$fourth-color: color(display-p3 .7569 1 .5294); /* #007bff - verde realce */
+
+$theme-colors: (
+  "primary": #1b98e0,
+  "secondary": #f4c61f,
+  //"success":    $success,
+  //"info":       $info,
+  //"warning":    $warning,
+  //"danger":     $danger,
+  "light": #fff,
+  "dark": #1b98e0
+);
+
