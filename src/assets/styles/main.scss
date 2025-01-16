@@ -8,7 +8,6 @@
  */
 
 @import "variables";
-@import "mixins";
 
 /**
  * Import npm dependencies
@@ -30,11 +29,7 @@
 
 @import "layouts/section";
 @import "layouts/nav";
-@import "layouts/article";
 @import "layouts/home";
-@import "layouts/table";
-@import "layouts/form";
-
 @import "modules/hero";
 @import "modules/highlight";
 @import "modules/speaker";

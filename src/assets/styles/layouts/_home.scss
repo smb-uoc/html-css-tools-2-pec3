@@ -1,5 +1,4 @@
 @use "../variables";
-@use "../mixins";
 
 @layer layout {
   .venue {
@@ -36,4 +35,8 @@
   @container (min-width: 900px) {
     font-size: 4rem;
   }
+}
+
+.container {
+  container-type: inline-size;
 }

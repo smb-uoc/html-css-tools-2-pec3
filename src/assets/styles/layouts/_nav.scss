@@ -1,5 +1,4 @@
 @use "../variables";
-@use "../mixins";
 
 .nav-container {
   width: 100%;
@@ -16,10 +15,14 @@
 
 div:has(.nav-container) {
   ul {
-    @include mixins.display-flex(flex, row, space-around);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 
 .header-nav {
-  @include mixins.font(1.25rem, variables.$bold-weight);
+  color: variables.$second-color;
+  font-size: 1.25rem;
+  font-weight: variables.$bold-weight;
 }
