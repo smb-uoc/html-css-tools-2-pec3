@@ -1,5 +1,3 @@
-@use "../variables";
-
 @layer module {
   .highlight {
     margin-top: 2rem;
@@ -7,7 +5,7 @@
     padding: 1.5rem;
     transition: transform .3s ease;
     border-radius: 1rem;
-    background-color: variables.$second-color;
+    background-color: color(display-p3 .974 .98 .98);
   }
 
   .highlight-link {
@@ -19,6 +17,6 @@
 
 .venue-image {
   width: 100%;
-  max-width: variables.$image-max-width;
-  max-height: variables.$image-max-height;
+  max-width: 800px;
+  max-height: 600px;
 }

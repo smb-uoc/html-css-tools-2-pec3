@@ -1,16 +1,7 @@
 @use "../variables";
 
 @layer base {
-  * {
-    box-sizing: border-box;
-  }
-
   html {
     min-width: variables.$min-width;
   }
-}
-
-a {
-  color: variables.$third-color;
-  text-decoration: none;
 }

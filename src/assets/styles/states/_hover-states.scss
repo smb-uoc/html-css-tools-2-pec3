@@ -1,20 +1,18 @@
-@use "../variables";
-
 @layer state {
   footer img:hover {
     opacity: .5;
   }
 
   a:hover {
-    color: variables.$primary-color;
-    font-weight: variables.$bold-weight;
+    color: color(display-p3 0 .478 1);
+    font-weight: 700;
     text-decoration: none;
   }
 
   .highlight:hover {
     transform: scale(1.15);
-    border: 1px solid variables.$primary-color;
-    color: variables.$primary-color;
+    border: 1px solid color(display-p3 0 .478 1);
+    color: color(display-p3 0 .478 1);
   }
 
   .speaker-card:hover {

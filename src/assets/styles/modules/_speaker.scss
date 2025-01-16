@@ -1,5 +1,3 @@
-@use "../variables";
-
 @layer module {
   .speakers-container {
     display: flex;
@@ -46,7 +44,7 @@
   .speaker-name {
     margin: .5rem 0;
     font-size: 1.25rem;
-    font-weight: variables.$bold-weight;
+    font-weight: 700;
 
     @container (min-width: 600px) {
       font-size: 1.5rem;
@@ -58,7 +56,7 @@
   }
 
   .speaker-quote {
-    color: variables.$third-color;
+    color: color(display-p3 .424 .463 .494);
     font-style: italic;
 
     @container (min-width: 600px) {

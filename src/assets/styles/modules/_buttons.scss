@@ -1,4 +1,8 @@
-@use "../variables";
+@layer components {
+  .btn-sandwich {
+    @apply focus:border-4 focus:border-white-transparent focus:rounded-lg;
+  }
+}
 
 .btn {
   padding: 1rem;
@@ -7,14 +11,15 @@
 
 .btn-register {
   border: none;
-  background-color: variables.$second-color;
-  color: variables.$primary-color;
+  background-color: color(display-p3 .974 .98 .98);
+  color: color(display-p3 0 .478 1);
   text-decoration: none;
 }
 
 .btn-learn-more {
-  border: 1px solid variables.$second-color;
+  border: 1px solid color(display-p3 .974 .98 .98);
   background-color: transparent;
-  color: variables.$second-color;
+  color: color(display-p3 .974 .98 .98);
   text-decoration: none;
 }
+

@@ -1,4 +1,3 @@
-@use "../variables";
 
 @layer layout {
   .venue {
@@ -26,7 +25,7 @@
 
 .title {
   font-size: 2.5rem;
-  font-weight: variables.$bold-weight;
+  font-weight: 700;
 
   @container (min-width: 600px) {
     font-size: 3rem;

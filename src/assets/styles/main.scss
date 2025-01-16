@@ -7,8 +7,6 @@
  * Import variables
  */
 
-@import "variables";
-
 /**
  * Import npm dependencies
  * see: https://v2.parceljs.org/features/module-resolution/
@@ -28,7 +26,6 @@
 @import "base/base";
 
 @import "layouts/section";
-@import "layouts/nav";
 @import "layouts/home";
 @import "modules/hero";
 @import "modules/highlight";
@@ -36,8 +33,6 @@
 @import "modules/buttons";
 
 @import "states/hover-states";
-
-@import "themes/themes";
 
 @tailwind base;
 @tailwind components;
