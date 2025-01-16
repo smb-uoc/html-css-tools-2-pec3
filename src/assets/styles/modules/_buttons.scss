@@ -4,6 +4,11 @@
   }
 }
 
+.small-white-line {
+  @apply block w-6 h-0.5 bg-white-transparent my-1.5;
+}
+
+
 .btn {
   padding: 1rem;
   font-size: 1rem;

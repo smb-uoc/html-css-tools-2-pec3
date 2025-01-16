@@ -11,12 +11,19 @@ import VanillaTilt from 'vanilla-tilt';
 
 document.addEventListener('DOMContentLoaded', function () {
   const currentLocation = window.location.pathname;
-  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+  const navLinks = document.querySelectorAll('.nav-link');
 
   navLinks.forEach(link => {
     if (currentLocation.includes(link.getAttribute('href'))) {
-      link.classList.add('active');
+      link.classList.add('text-green');
+      link.classList.remove('text-white');
       link.setAttribute('aria-current', 'page');
     }
   });
 });
+
+
+window.toggleMenu = () => {
+  document.getElementById('navbarButton').classList.toggle('btn-sandwich')
+  document.getElementById('navbarNav').classList.toggle('hidden')
+}
