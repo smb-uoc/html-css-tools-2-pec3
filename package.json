@@ -51,14 +51,12 @@
     "stylelint": "^16.10.0",
     "stylelint-config-property-sort-order-smacss": "^10.0.0",
     "stylelint-config-recommended-scss": "^14.1.0",
-    "stylelint-config-twbs-bootstrap": "^15.1.0",
     "stylelint-scss": "^6.8.1",
     "w3c-html-validator": "^1.8.2"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.3",
     "vanilla-tilt": "^1.8.1"
   }
 }

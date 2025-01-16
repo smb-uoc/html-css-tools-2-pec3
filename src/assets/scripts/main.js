@@ -3,7 +3,6 @@
  * see commented examples below
  */
 
-import * as bootstrap from 'bootstrap';
 import VanillaTilt from 'vanilla-tilt';
 
 /**
@@ -20,23 +19,4 @@ document.addEventListener('DOMContentLoaded', function () {
       link.setAttribute('aria-current', 'page');
     }
   });
-});
-
-const form = document.getElementById('registrationForm');
-const modalHTML = document.getElementById('confirmModal');
-const modal = new bootstrap.Modal(modalHTML);
-
-form.addEventListener('submit', function (event) {
-  event.preventDefault();
-  if (form.checkValidity()) {
-    modal.show();
-    setTimeout(function () {
-      form.submit();
-    }, 5000);
-    modalHTML.addEventListener('hidden.bs.modal', function () {
-      form.submit();
-    });
-  } else {
-    form.classList.add('was-validated');
-  }
 });

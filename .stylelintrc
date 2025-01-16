@@ -1,7 +1,6 @@
 {
   "extends": [
     "stylelint-config-recommended-scss",
-    "stylelint-config-twbs-bootstrap",
     "stylelint-config-property-sort-order-smacss"
   ],
   "rules": {
