@@ -24,6 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 window.toggleMenu = () => {
-  document.getElementById('navbarButton').classList.toggle('btn-sandwich')
+  document.getElementById('navbarButton').classList.toggle('focus-border-white')
   document.getElementById('navbarNav').classList.toggle('hidden')
 }

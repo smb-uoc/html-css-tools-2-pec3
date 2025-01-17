@@ -19,6 +19,9 @@ module.exports = {
       fontFamily: {
         sans: ['Helvetica Neue', 'Arial', 'sans-serif'],
       },
+      minWidth: {
+        '340': '340px',
+      },
     },
   },
   plugins: [],

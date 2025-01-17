@@ -1,9 +1,9 @@
 @layer components {
-  .btn-sandwich {
+  .focus-white-border {
     @apply focus:border-4 focus:border-white-transparent focus:rounded-lg;
   }
 }
 
-.small-white-line {
+.small-box-white-line {
   @apply block w-6 h-0.5 bg-white-transparent my-1.5;
 }
