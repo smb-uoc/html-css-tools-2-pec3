@@ -1,0 +1,10 @@
+.container-inline {
+  container-type: inline-size;
+}
+
+/* Compatibilidad con navegadores sin soporte para Grid */
+@supports not (display: grid) {
+  .fallback-flex {
+    @apply flex flex-col justify-center items-center;
+  }
+}

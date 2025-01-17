@@ -13,7 +13,10 @@ module.exports = {
         'white-transparent-2': '#ffffff1a',
         grey: 'color(display-p3 .424 .463 .494)',
         green: 'color(display-p3 .7569 1 .5294)',
-      }
+      },
+      fontFamily: {
+        sans: ['Helvetica Neue', 'Arial', 'sans-serif'],
+      },
     },
   },
   plugins: [],
