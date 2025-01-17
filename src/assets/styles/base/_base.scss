@@ -1,7 +1,5 @@
-@use "../variables";
-
 @layer base {
   html {
-    min-width: variables.$min-width;
+    min-width: 340px;
   }
 }
