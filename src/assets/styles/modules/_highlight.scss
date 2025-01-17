@@ -1,20 +1,3 @@
-@layer module {
-  .highlight {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    transition: transform .3s ease;
-    border-radius: 1rem;
-    background-color: color(display-p3 .974 .98 .98);
-  }
-
-  .highlight-link {
-    color: var(--bs-body-color);
-    text-decoration: none;
-  }
-
-}
-
 .venue-image {
   width: 100%;
   max-width: 800px;
