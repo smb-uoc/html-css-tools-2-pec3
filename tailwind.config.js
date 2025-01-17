@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors: {
         blue: '#1b98e0',
-        yellow: '#f4c61f',
+        yellow: '#f5c61e',
+        'yellow-light': '#f6cf41',
         'blue-dark': 'color(display-p3 0 .478 1)',
         white: '#fff',
         'white-grey': 'color(display-p3 .974 .98 .98)',
