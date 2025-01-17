@@ -8,3 +8,7 @@
     @apply flex flex-col justify-center items-center;
   }
 }
+
+.zoomable {
+  @apply max-w-[150px] m-4 transition-transform duration-300 ease-in-out shadow-[0_4px_8px_rgba(0,0,0,0.1)] sm:max-w-[200px] lg:max-w-[250px] transform hover:scale-105
+}
