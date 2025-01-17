@@ -1,7 +1,5 @@
-@layer components {
-  .focus-white-border {
-    @apply focus:border-4 focus:border-white-transparent focus:rounded-lg;
-  }
+.focus-white-border {
+  @apply focus:border-4 focus:border-white-transparent focus:rounded-lg;
 }
 
 .small-box-white-line {

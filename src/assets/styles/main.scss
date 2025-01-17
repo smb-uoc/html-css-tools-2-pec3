@@ -16,9 +16,6 @@
  * It's a best practice to use a different partial for each page
  */
 
-/* establish a layer order up-front, from structure to aesthetics */
-@layer base, layout, module, state, theme;
-
 @import "modules/buttons";
 @import "modules/containers";
 @import "modules/text";
