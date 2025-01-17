@@ -16,9 +16,9 @@
  * It's a best practice to use a different partial for each page
  */
 
-@import "modules/buttons";
-@import "modules/containers";
-@import "modules/text";
+@import "components/buttons";
+@import "components/containers";
+@import "components/text";
 
 @tailwind base;
 @tailwind components;
